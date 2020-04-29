@@ -1,0 +1,28 @@
+{
+  "name": "@angular/cdk-experimental",
+  "version": "8.2.3",
+  "description": "Experimental components for Angular CDK",
+  "main": "./bundles/cdk-experimental.umd.js",
+  "module": "./esm5/cdk-experimental.es5.js",
+  "es2015": "./esm2015/cdk-experimental.js",
+  "typings": "./cdk-experimental.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/components.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/components/issues"
+  },
+  "homepage": "https://github.com/angular/components#readme",
+  "peerDependencies": {
+    "@angular/cdk": "8.2.3",
+    "@angular/core": "^8.0.0 || ^9.0.0-0"
+  },
+  "dependencies": {
+    "tslib": "^1.7.1"
+  },
+  "releaseGitCommitSha": "0b175c619f37f450f147d42f8c562f08333ed330",
+  "releaseGitBranch": "8.2.x",
+  "releaseGitUser": "Maksym Makartsov <maksym.makartsov@idapgroup.com>"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/youtube-player/index.ts"],"names":[],"mappings":";;;;;;;AAIA,mDAAc,cAAc,CAAC","sourcesContent":["/**\n * Generated bundle index. Do not edit.\n */\n\nexport * from './public-api';\n"]}
