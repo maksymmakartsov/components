@@ -154,6 +154,9 @@ export class CdkDrag<T = any> implements AfterViewInit, OnChanges, OnDestroy {
    */
   @Input('cdkDragConstrainPosition') constrainPosition?: (point: Point, dragRef: DragRef) => Point;
 
+  /** Whether parent of drag container is fixed. */
+  @Input('cdkDropIsDragParentFixed') dragParentFixed: boolean;
+
   /** Emits when the user starts dragging the item. */
   @Output('cdkDragStarted') started: EventEmitter<CdkDragStart> = new EventEmitter<CdkDragStart>();
 
@@ -354,6 +357,7 @@ export class CdkDrag<T = any> implements AfterViewInit, OnChanges, OnDestroy {
           .withBoundaryElement(this._getBoundaryElement())
           .withPlaceholderTemplate(placeholder)
           .withPreviewTemplate(preview);
+        ref.dragParentFixed = coerceBooleanProperty(this.dragParentFixed);
 
         if (dir) {
           ref.withDirection(dir.value);
